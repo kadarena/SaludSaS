@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "886601409423",
+    "firebase_url": "https://saludsas-116b2-default-rtdb.firebaseio.com",
+    "project_id": "saludsas-116b2",
+    "storage_bucket": "saludsas-116b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886601409423:android:8d99697b1cade0c426a1fa",
+        "android_client_info": {
+          "package_name": "co.cesde.saludsas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2X1YKV9RdR_BvJhhVnTDSR1RDYXi3Fbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886601409423:android:bd5547a2a991f5a426a1fa",
+        "android_client_info": {
+          "package_name": "com.example.saludsass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2X1YKV9RdR_BvJhhVnTDSR1RDYXi3Fbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

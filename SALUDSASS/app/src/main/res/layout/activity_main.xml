@@ -1,0 +1,221 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#3E4FE2"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="229dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/oms" />
+
+    <Spinner
+        android:id="@+id/sp_documento"
+        android:layout_width="218dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_iniciar"
+        android:layout_width="106dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="@color/blue"
+        android:text="INICIAR SESION"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="225dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="CONTRASEÑA"
+        android:inputType="textPassword"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_iniciar"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="231dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="NUMERO DE IDENTIFICACION"
+        android:inputType="number"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_documento" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="147dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="INICIAR SESION"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/sp_documento"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="157dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="SEGURIDAD SOCIAL"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="¿Aun no tienes una cuenta?"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/link_crear_cuenta"
+        app:layout_constraintEnd_toEndOf="@+id/btn_iniciar"
+        app:layout_constraintStart_toStartOf="@+id/btn_iniciar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar" />
+
+    <TextView
+        android:id="@+id/link_crear_cuenta"
+        android:layout_width="74dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:text="Crear Cuenta"
+        android:textColor="@color/blue"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/link_recuperar_contrasena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/link_recuperar_contrasena"
+        android:layout_width="161dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="66dp"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:text="¿Haz olvidado tu contraseña?"
+        android:textColor="@color/blue"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/link_crear_cuenta" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="1dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="391dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/link_recuperar_contrasena">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:text="Privacidad"
+            android:textAlignment="center"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="Ayuda"
+            android:textAlignment="center"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="40dp"
+            android:text="Seguridad"
+            android:textAlignment="center"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
